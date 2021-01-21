@@ -1,0 +1,72 @@
+
+import java.util.Random;
+
+public class martin {
+    public static void main(String args[]) {
+int znova=0;
+        for(;znova==0;){
+        Random myRand = new Random();
+        int chamber = myRand.nextInt(6) + 1;
+
+            Random myRand1 = new Random();
+            int chamber1 = myRand1.nextInt(6) + 1;
+
+        switch(chamber) {
+            case 1:
+                znova=0;
+                System.out.println("You live!");
+                break;
+            case 2:
+                znova=0;
+                System.out.println("You live!");
+                break;
+            case 3:
+                znova=0;
+                System.out.println("You live!");
+                break;
+            case 4:
+                znova=0;
+                System.out.println("You live!");
+                break;
+            case 5:
+                znova=1;
+                System.out.println("You Die!");
+                System.out.println("You Loss!");
+                break;
+            case 6:
+                znova=0;
+                System.out.println("You live!");
+                break;}
+
+                switch(chamber1) {
+                case 1:
+                    znova = 0;
+                    System.out.println("You opponent live!");
+                    break;
+                case 2:
+                    znova = 0;
+                    System.out.println("You opponent live!");
+                    break;
+                case 3:
+                    znova = 0;
+                    System.out.println("You opponent live!");
+                    break;
+                case 4:
+                    znova = 0;
+                    System.out.println("You opponent live!");
+                    break;
+                case 5:
+                    znova = 1;
+                    System.out.println("You opponent Die!");
+                    System.out.println("You won!");
+                    break;
+                case 6:
+                    znova = 0;
+                    System.out.println("You opponent live!");
+                    break;
+
+            }
+        }
+
+    }
+}
