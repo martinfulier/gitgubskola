@@ -1,0 +1,89 @@
+import java.util.Random;
+import java.util.Scanner;
+public class martin {
+    public static void main(String[] args) {
+        int znova=0;
+        int znova1=0;
+        Scanner myObj = new Scanner(System.in);
+
+        for(;znova==0;){
+            Random myRand = new Random();
+            int chamber = myRand.nextInt(6) + 1;
+
+            Random myRand1 = new Random();
+            int chamber1 = myRand1.nextInt(6) + 1;
+           while(znova1=0){
+            System.out.println("ak chceš vystreliť na prvého hráča ,napíš 1,ak chceš vystreliť na druhého hráča ,napíš 2");
+            int abc = myObj.nextInt();
+            if(abc==1) {
+                switch (chamber) {
+                    case 1:
+                        znova = 0;
+                        znova1 = 0;
+                        System.out.println("You live!");
+                        break;
+                    case 2:
+                        znova1 = 0;
+                        znova = 0;
+                        System.out.println("You live!");
+                        break;
+                    case 3:
+                        znova1 = 0;
+                        znova = 0;
+                        System.out.println("You live!");
+                        break;
+                    case 4:
+                        znova1 = 0;
+                        znova = 0;
+                        System.out.println("You live!");
+                        break;
+                    case 5: znova1 = 1;
+                        znova = 1;
+                        System.out.println("You Die!");
+                        System.out.println("You Loss!");
+                        break;
+                    case 6:
+                        znova1 = 0;
+                        znova = 0;
+                        System.out.println("You live!");
+                        break;
+                }
+            }
+            esle if(abc==2)  {  switch(chamber1) {
+                case 1:
+                    znova = 0;
+                    znova1 = 0;
+                    System.out.println("You opponent live!");
+                    break;
+                case 2:
+                    znova = 0;
+                    znova1 = 0;
+                    System.out.println("You opponent live!");
+                    break;
+                case 3:
+                    znova1 = 0;
+                    znova = 0;
+                    System.out.println("You opponent live!");
+                    break;
+                case 4:
+                    znova1 = 0;
+                    znova = 0;
+                    System.out.println("You opponent live!");
+                    break;
+                case 5:
+                    znova1 = 1;
+                    znova = 1;
+                    System.out.println("You opponent Die!");
+                    System.out.println("You won!");
+                    break;
+                case 6:
+                    znova1 = 0;
+                    znova = 0;
+                    System.out.println("You opponent live!");
+                    break;
+            }}
+            else { znova1 = 1;}
+            }
+        }
+    }
+}
